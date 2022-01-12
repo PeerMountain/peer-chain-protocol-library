@@ -63,7 +63,7 @@ publishing {
     }
     repositories {
         maven {
-            url = uri("https://gitlab.amlapi.com/api/v4/projects/57/packages/maven")
+            url = uri("https://gitlab.amlapi.com/api/v4/projects/72/packages/maven")
             credentials(HttpHeaderCredentials::class.java) {
                 name = "Job-Token"
                 value = System.getenv("CI_JOB_TOKEN")

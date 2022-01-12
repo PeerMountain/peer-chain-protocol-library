@@ -8,7 +8,7 @@ gradle.projectsLoaded {
             mavenCentral()
             mavenLocal()
             maven {
-                url = uri("https://gitlab.amlapi.com/api/v4/projects/57/packages/maven")
+                url = uri("https://gitlab.amlapi.com/api/v4/projects/72/packages/maven")
                 name = "GitLab"
                 credentials(HttpHeaderCredentials::class.java) {
                     name = "Private-Token"
@@ -19,7 +19,7 @@ gradle.projectsLoaded {
                 }
             }
             maven {
-                url = uri("https://gitlab.amlapi.com/api/v4/projects/57/packages/maven")
+                url = uri("https://gitlab.amlapi.com/api/v4/projects/72/packages/maven")
                 name = "GitLabCI"
                 credentials(HttpHeaderCredentials::class.java) {
                     name = "Job-Token"
@@ -28,10 +28,6 @@ gradle.projectsLoaded {
                 authentication {
                     create<HttpHeaderAuthentication>("header")
                 }
-            }
-            maven {
-                url = uri("https://www.igniterealtime.org/archiva/repository/maven")
-                name = "Nightly Apache"
             }
         }
     }
