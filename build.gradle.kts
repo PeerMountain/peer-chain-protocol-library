@@ -15,10 +15,6 @@ val grgit = Grgit.open(mapOf("dir" to project.projectDir))
 val commit = grgit.head().abbreviatedId
 version = commit
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation("com.kyc3:oracle-definitions:b220af7")
 
