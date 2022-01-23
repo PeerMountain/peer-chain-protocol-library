@@ -16,7 +16,7 @@ val commit = grgit.head().abbreviatedId
 version = commit
 
 dependencies {
-    implementation("com.kyc3:oracle-definitions:8bfa4f3")
+    implementation("com.kyc3:oracle-definitions:f43c6ab")
 
     implementation("org.igniterealtime.smack:smack-tcp:4.5.0-alpha1-SNAPSHOT")
     implementation("org.igniterealtime.smack:smack-core:4.5.0-alpha1-SNAPSHOT")
