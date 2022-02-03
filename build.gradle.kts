@@ -16,7 +16,7 @@ val commit = grgit.head().abbreviatedId
 version = commit
 
 dependencies {
-    implementation("com.kyc3:oracle-definitions:f43c6ab")
+    implementation("com.kyc3:oracle-definitions:befdb55")
 
     implementation("org.igniterealtime.smack:smack-tcp:4.5.0-alpha1-SNAPSHOT")
     implementation("org.igniterealtime.smack:smack-core:4.5.0-alpha1-SNAPSHOT")
@@ -66,6 +66,13 @@ publishing {
             }
             authentication {
                 create<HttpHeaderAuthentication>("header")
+            }
+        }
+        maven {
+            url = uri("https://maven.pkg.github.com/PeerMountain/attestation-engine-api")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
