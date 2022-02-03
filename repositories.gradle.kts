@@ -55,6 +55,13 @@ gradle.projectsLoaded {
                 url = uri("https://www.igniterealtime.org/archiva/repository/maven")
                 name = "Nightly Apache"
             }
+            maven {
+                url = uri("https://maven.pkg.github.com/PeerMountain/attestation-engine-api")
+                credentials {
+                    username = System.getenv("GITHUB_ACTOR")
+                    password = System.getenv("GITHUB_TOKEN")
+                }
+            }
         }
     }
 }
