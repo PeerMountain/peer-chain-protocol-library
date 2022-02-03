@@ -69,7 +69,7 @@ publishing {
             }
         }
         maven {
-            url = uri("https://maven.pkg.github.com/PeerMountain/attestation-engine-api")
+            url = uri("https://maven.pkg.github.com/PeerMountain/peer-chain-protocol-library")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
